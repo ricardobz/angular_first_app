@@ -4,9 +4,15 @@
 
 
 ```javascript
-selector: 'app-servers'   // -> <app-servers></app-servers>
-selector: '[app-servers]' // -> <div app-servers></div>
-selector: '.app-servers'  // -> <div class="app-servers"></div>
+selector: 'app-servers'
+selector: '[app-servers]'
+selector: '.app-servers'
+```
+Respectively:
+```html
+<app-servers></app-servers>
+<div app-servers></div>
+<div class="app-servers"></div>
 ```
 
 
@@ -19,5 +25,14 @@ selector: '.app-servers'  // -> <div class="app-servers"></div>
 
 ```html
 <p [innerText]="title"></p>
+```
+
+## Event binding
+
+```html
+<input type="text" (input)="onUpdateServerName($event)" />
+<button (click)="onCreateServer()">
+  Add server
+</button>
 ```
 
