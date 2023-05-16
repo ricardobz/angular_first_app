@@ -1,4 +1,4 @@
-# Module 1
+# Module 1 & 2
 
 ## Selectors
 
@@ -42,3 +42,8 @@ Respectively:
 <input type="text" [(ngModel)]="serverName"/>
 ```
 
+## Directives (ngIf)
+
+```html
+<p *ngIf="serverCreated">Server was created! Name is {{ serverName }}</p>
+```
