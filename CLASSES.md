@@ -66,3 +66,9 @@ Class .online already declared in css file
   Server with ID {{ serverId }} is {{ getServerStatus() }}!
 </p>
 ```
+
+## Directives (ngFor)
+
+```html
+<app-server *ngFor="let server of servers"></app-server>
+```
