@@ -30,9 +30,15 @@ Respectively:
 ## Event binding
 
 ```html
-<input type="text" (input)="onUpdateServerName($event)" />
+<input type="text" (input)="onUpdateServerName($event)"/>
 <button (click)="onCreateServer()">
   Add server
 </button>
+```
+
+## Two-way data binding
+
+```html
+<input type="text" [(ngModel)]="serverName"/>
 ```
 
