@@ -47,3 +47,11 @@ Respectively:
 ```html
 <p *ngIf="serverCreated">Server was created! Name is {{ serverName }}</p>
 ```
+
+## Directives (ngStyle)
+
+```html
+<p [ngStyle]="{ backgroundColor: getColor() }">
+  Server with ID {{ serverId }} is {{ getServerStatus() }}!
+</p>
+```
