@@ -55,3 +55,14 @@ Respectively:
   Server with ID {{ serverId }} is {{ getServerStatus() }}!
 </p>
 ```
+
+## Directives (ngClass)
+Class .online already declared in css file
+
+```html
+<p
+  [ngClass]="{ online: serverStatus === 'online' }"
+>
+  Server with ID {{ serverId }} is {{ getServerStatus() }}!
+</p>
+```
